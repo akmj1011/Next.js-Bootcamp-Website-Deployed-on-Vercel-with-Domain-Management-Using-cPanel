@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Float animation for subtle movement */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.float-animation {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+.pulse-button {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Full-page gradient animation */
+@keyframes fullGradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.full-page-gradient {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    -45deg,
+    hsl(230, 70%, 60%),  /* blue */
+    hsl(270, 60%, 55%),  /* purple */
+    hsl(310, 75%, 65%),  /* pink */
+    hsl(350, 80%, 60%),  /* red-pink */
+    hsl(160, 70%, 45%),  /* aqua green */
+    hsl(200, 70%, 40%)   /* teal blue */
+  );
+  background-size: 800% 800%;  /* smaller for less pale stretching */
+  animation: fullGradientShift 60s linear infinite;
+  z-index: -1;
+}
+
+/* Glass effect */
+.glass-effect {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Neon glow effect */
+.neon-glow {
+  box-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
+}
+
+/* Card hover effects */
+.track-card { transform: perspective(1000px) rotateX(0deg); transition: all 0.3s ease; }
+.track-card:hover { transform: perspective(1000px) rotateX(-5deg) translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.2); }
+
+.mentor-card { transition: all 0.3s ease; }
+.mentor-card:hover { transform: scale(1.05) rotate(1deg); }
+
+/* WhatsApp float */
+.whatsapp-float { position: fixed; bottom: 20px; right: 20px; z-index: 1000; animation: bounce 2s infinite; }
+@keyframes bounce { 0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);} }
+
+/* Responsive containers */
+.container-responsive { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+
+/* Section padding */
+.section-padding { padding: 3rem 0; }
+@media (max-width: 1024px) { .section-padding { padding: 2rem 0; } }
+@media (max-width: 640px) { .section-padding { padding: 1.5rem 0; } }
+
+/* Classy heading */
+.classy-heading {
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #22223b;
+  text-shadow: 0 2px 8px rgba(102, 126, 234, 0.08);
+}
+
+/* Classy card */
+.classy-card {
+  border-radius: 1.25rem;
+  background: rgba(255,255,255,0.85);
+  box-shadow: 0 8px 32px rgba(31,38,135,0.12);
+  border: 1px solid rgba(255,255,255,0.18);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.classy-card:hover { transform: translateY(-6px) scale(1.03); box-shadow: 0 16px 40px rgba(31,38,135,0.18); }
+
+/* Responsive images */
+.responsive-img { width: 100%; height: auto; border-radius: 0.75rem; object-fit: cover; }
+
+/* Section Gradient Blending (overlay only, transparent) */
+.section-gradient { position: relative; padding: 6rem 0; background: transparent; }
+
+/* Optional: smooth background transition */
+.section-gradient { transition: background 1s ease; }
+
+/* Only apply for screens md and up (laptop / desktop) */
+@media (min-width: 768px) {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(128, 90, 213, 0.5); /* purple gradient effect */
+    border-radius: 8px;
+    transition: background 0.3s;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(128, 90, 213, 0.8);
+  }
+}
+/*
+.scroll-adjust {
+  scroll-margin-top: 0rem;
+}
+
+@media (max-width: 768px) {
+  .scroll-adjust {
+    scroll-margin-top: 5rem; 
+  }
+} 
+*/
+
+.mentor-scroll {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: auto;
+  overscroll-behavior-x: contain; 
+  overscroll-behavior-y: none;   /* 🔒 prevent vertical wiggle */
+  touch-action: pan-x;           /* 🔒 lock touch to horizontal only */
+}
+
+
