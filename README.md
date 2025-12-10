@@ -53,3 +53,53 @@ The application helps streamline:
 
 ## 🧩 System Architecture (High Level)
 
+User → Next.js Frontend → REST APIs → Supabase (PostgreSQL Database)
+↓
+GitHub → Vercel Deployment
+
+
+
+---
+
+## 👨‍💻 My Responsibilities
+
+- Managed **domain and hosting operations** using **cPanel**
+- Created **intern and team lead accounts** with **role-based access control**
+- Configured **secure FTP access using FileZilla**
+- Handled **domain email setup with automated reminders**
+- Developed the **Next.js web application** using **VS Code**
+- Integrated **Supabase database with REST APIs**
+- Pushed project code to **GitHub using Git**
+- Deployed the project to **Vercel following production best practices**
+
+---
+
+## ⚙️ Installation & Setup (For Local Use)
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+npm install
+npm run dev
+```
+
+---
+
+## Create .env.local and add:
+
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+
+---
+
+## ✅ Outcome & Learning
+
+Real-world domain & hosting operations
+
+Production deployment workflows
+
+Full-stack integration using Next.js & Supabase
+
+Secure access & automation
+
+Strong Git & DevOps foundation
