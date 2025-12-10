@@ -1,4 +1,4 @@
-# 🌐 Domain & Web Operations Dashboard – Intern Project
+# 🌐 Domain & Web Operations
 **Tech Stack:** 
 Next.js,
 React.js,
