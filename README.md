@@ -1,15 +1,14 @@
 # 🌐 Domain & Web Operations Dashboard – Intern Project
 **Tech Stack:** 
-Next.js
--
-React.js
-Node.js
-Tailwind CSS
-Supabase (PostgreSQL)
-REST APIs
-Git, GitHub
-cPanel
-FileZilla
+Next.js,
+React.js,
+Node.js,
+Tailwind CSS,
+Supabase (PostgreSQL),
+REST APIs,
+Git, GitHub,
+cPanel,
+FileZilla,
 Vercel  
 
 
