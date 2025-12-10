@@ -1,11 +1,16 @@
 # 🌐 Domain & Web Operations Dashboard – Intern Project
+**Tech Stack:** 
+Next.js
+React.js
+Node.js
+Tailwind CSS
+Supabase (PostgreSQL)
+REST APIs
+Git, GitHub
+cPanel
+FileZilla
+Vercel  
 
-**Internship:** Brain Train Consultancy Service LLP  
-**Duration:** Sep 2025 – Oct 2025  
-**Role:** Domain & Web Operations Intern  
-**Tech Stack:** Next.js, Supabase (PostgreSQL), REST APIs, Git, GitHub, cPanel, FileZilla, Vercel  
-**Live Deployment:** [Add Your Live Link Here]  
-**Repository:** [Add Your GitHub Repo Link Here]  
 
 ---
 
